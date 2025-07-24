@@ -1,0 +1,334 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Mcard.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Mcard.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Mcard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "MCTEST Version 1.3.0.1",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © SCM Microsystems Inc. 2002 - 2003",
+                    IDC_STATIC,40,25,176,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MCARD_DIALOG DIALOGEX 0, 0, 459, 270
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_APPWINDOW
+CAPTION "MCTEST"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_READER_NAMES,268,15,175,66,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Auto detect",IDC_AUTODETECT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,236,35,28,9
+    EDITTEXT        IDC_CARDTYPE,268,33,19,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "MemInit",IDC_MEMINIT,289,34,34,13
+    PUSHBUTTON      "Connect",IDC_CONNECT,326,34,34,13
+    PUSHBUTTON      "Disconnect",IDC_DISCONNECT,361,34,42,13
+    PUSHBUTTON      "MemShut",IDC_SHUTDOWN,405,34,38,13
+    EDITTEXT        IDC_MEMZONE,263,67,10,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MEMOFFSET,301,68,26,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_MEMLEN,360,68,25,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Read",IDC_READMEM,387,67,28,13
+    PUSHBUTTON      "Write",IDC_WRITEMEM,418,67,28,13
+    EDITTEXT        IDC_COUNTER,307,87,19,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Decrement units",IDC_BUTTON1,235,87,66,13
+    PUSHBUTTON      "Protect Read",IDC_PROTECTREAD,332,87,55,13
+    PUSHBUTTON      "Protect Write",IDC_PROTECTWRITE,389,87,56,13
+    EDITTEXT        IDC_PINNUM,16,228,14,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CURPIN,91,216,33,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_CURPINLEN,153,216,10,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWPIN,91,232,33,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEWPINLEN,153,232,10,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Verify",IDC_VERIFYPIN,167,216,49,13
+    PUSHBUTTON      "Change PIN",IDC_CHANGEPIN,167,232,49,13
+    EDITTEXT        IDC_CHALLENGEID,27,150,18,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHALLENGELEN,72,150,19,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Challenge",IDC_STATIC,100,151,32,8,0,WS_EX_TRANSPARENT
+    EDITTEXT        IDC_CBUFFER,136,149,76,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "Get Response",IDC_GETRESPONSE,16,165,76,13
+    CONTROL         "Enable",IDC_CARDSTATEENABLE,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_TABSTOP,19,128,36,12
+    EDITTEXT        IDC_CARDTIMEOUT,90,129,26,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_CLOCKRATE,177,15,33,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_BITORDER,177,28,33,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    COMBOBOX        IDC_ATTRS,21,75,72,53,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_DETAILS,102,75,103,13,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "Get Attributes",IDC_GETATTRIB,15,95,89,13
+    PUSHBUTTON      "Set Attributes",IDC_SETATTRIB,120,95,89,13
+    DEFPUSHBUTTON   "&Exit",Exit,396,252,55,17,0,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_STATUS,32,256,339,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "Status:",IDC_STATIC,8,256,22,10,0,WS_EX_TRANSPARENT
+    GROUPBOX        "PIN Authentication",IDC_STATIC,9,203,212,47,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "PIN No",IDC_STATIC,15,216,25,10
+    LTEXT           "Current PIN",IDC_STATIC,49,216,37,13
+    LTEXT           "Length",IDC_STATIC,128,216,22,13
+    LTEXT           "New PIN",IDC_STATIC,49,232,30,13
+    LTEXT           "Length",IDC_STATIC,127,232,22,13
+    GROUPBOX        "Attributes",IDC_STATIC,9,3,211,109,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "Type",IDC_STATIC,18,15,18,10
+    LTEXT           "Protocol",IDC_STATIC,17,31,28,8
+    EDITTEXT        IDC_PROTOCOL,47,29,84,13,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    EDITTEXT        IDC_TYPE,47,13,84,13,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY,WS_EX_RIGHT
+    LTEXT           "Mem Zones",IDC_STATIC,16,49,38,9
+    EDITTEXT        IDC_ZONES,58,47,15,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Details",IDC_STATIC,15,64,195,29
+    LTEXT           "PINs",IDC_STATIC,142,49,16,9
+    EDITTEXT        IDC_PINS,160,47,15,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Bit Order",IDC_STATIC,142,31,27,9
+    LTEXT           "Clock",IDC_STATIC,143,16,20,8
+    GROUPBOX        "Memory Card connection",IDC_STATIC,228,3,223,49,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "Reader",IDC_STATIC,236,16,25,8
+    GROUPBOX        "CR Authentication",IDC_STATIC,8,138,211,46,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "ID",IDC_STATIC,15,152,10,10
+    LTEXT           "Len",IDC_STATIC,55,152,16,9
+    EDITTEXT        IDC_MEMBUFFER,233,104,211,141,ES_MULTILINE | WS_VSCROLL | 
+                    WS_HSCROLL
+    GROUPBOX        "Memory Window",IDC_STATIC,227,54,224,196,0,
+                    WS_EX_DLGMODALFRAME
+    LTEXT           "Zone ID",IDC_STATIC,235,69,26,12
+    LTEXT           "Offset",IDC_STATIC,279,69,20,12
+    LTEXT           "Length",IDC_STATIC,332,69,23,12
+    EDITTEXT        IDC_RBUFFER,136,166,76,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Response",IDC_STATIC,100,167,32,8,0,WS_EX_TRANSPARENT
+    LTEXT           "Counters",IDC_STATIC,81,49,30,9
+    EDITTEXT        IDC_COUNTERS,115,47,15,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "CRs",IDC_STATIC,178,49,16,9
+    EDITTEXT        IDC_CRS,194,47,15,12,ES_UPPERCASE | ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Card Status Tracking",IDC_STATIC,9,113,211,40,NOT 
+                    WS_VISIBLE,WS_EX_DLGMODALFRAME
+    COMBOBOX        IDC_EXPCARDSTATE,99,149,99,48,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Timeout",IDC_STATIC,59,131,26,8,NOT WS_VISIBLE
+    LTEXT           "Expected State",IDC_STATIC,48,153,50,9,NOT WS_VISIBLE
+    EDITTEXT        IDC_CARDSTATUS,160,130,48,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_VISIBLE
+    LTEXT           "Card State",IDC_STATIC,122,132,34,8,NOT WS_VISIBLE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,3,0,1
+ PRODUCTVERSION 1,3,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "SCM Microsystems Inc.                                       \0"
+            VALUE "FileDescription", "MCTEST Memory Card Test Application                         \0"
+            VALUE "FileVersion", "1.03.00.01          \0"
+            VALUE "InternalName", "MCTEST              \0"
+            VALUE "LegalCopyright", "Copyright © SCM Microsystems Inc.,2002-2003                 \0"
+            VALUE "OriginalFilename", "MCTEST.EXE          \0"
+            VALUE "ProductName", "MCTEST Memory Card Test Application                         \0"
+            VALUE "ProductVersion", "1.03.00.01          \0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MCARD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 8
+        RIGHTMARGIN, 452
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MCARD_DIALOG DLGINIT
+BEGIN
+    IDC_ATTRS, 0x403, 7, 0
+0x654d, 0x6f6d, 0x7972, "\000" 
+    IDC_ATTRS, 0x403, 4, 0
+0x4950, 0x004e, 
+    IDC_ATTRS, 0x403, 3, 0
+0x5243, "\000" 
+    IDC_ATTRS, 0x403, 8, 0
+0x6f43, 0x6e75, 0x6574, 0x0072, 
+    IDC_EXPCARDSTATE, 0x403, 18, 0
+0x4353, 0x5241, 0x5f44, 0x5453, 0x5441, 0x5f45, 0x4d45, 0x5450, 0x0059, 
+
+    IDC_EXPCARDSTATE, 0x403, 20, 0
+0x4353, 0x5241, 0x5f44, 0x5453, 0x5441, 0x5f45, 0x5250, 0x5345, 0x4e45, 
+0x0054, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Mcard..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Mcard.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
